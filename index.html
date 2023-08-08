@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1t</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/first.css">
+    <style>
+        body{
+            /* display: inline-block; */
+            margin: 0px;
+            padding: 0px;
+            /* background-image: url('img/gym2.jpg'); */
+            background: url('img/gym.jpg');
+            background-size: cover;
+            background-repeat: no-repeat ;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Merriweather', serif;
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+        .left img{
+            /* height: 90px; */
+            width: 100px;
+            /* filter: invert(90%); */
+        }
+        .left div{
+            text-align: center;
+        }
+        .mid{
+            display:block;
+            width: 46%;
+            margin: 12px auto;
+            /* top: 0px; */
+            /* border: 2px solid green; */
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid brown; */
+        }
+        .navBar{
+            display: inline-block;  
+            /* cursor: pointer; */
+        }
+        .navBar li{
+            display: inline-block;
+            font-size: 18px;
+        }
+        .navBar li a{
+            text-decoration: none;
+            color: white;
+            padding: 34px 23px;
+
+        }
+        .navBar li a:hover, .navBar li a.active{
+            color:rgb(199, 196, 196);
+            text-decoration: underline;
+        }
+        .btn{
+            margin: 0px 9px;
+            background-color: none;
+            color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+        }
+        .btn:hover{
+            background-color: rgb(156, 153, 153);
+        }
+        .container{
+            border: 2px solid white;
+            width: 40%;
+            padding: 35px 35px;
+            margin: 70px 330px;
+            border-radius: 10px;
+        }
+
+        /* #form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        } */
+
+
+        #form input{
+            /* text-align: center; */
+            margin: 1px;
+            display: block;
+            width: 170px;
+            padding: 4px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-family: 'Merriweather', serif;
+        }
+
+        #form{
+            /* display: block; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #form label{
+            /* text-align: center; */
+            margin: 1px ;
+            /* display: block; */
+            width: 170px;
+            padding: 2px;
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            font-family: 'Merriweather', serif;
+        }
+        
+        .container h3{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 23%;
+            margin: auto;
+            background-color: rgb(224, 70, 70);
+        }
+        /* input [type='radio']{
+            display: inline;
+        } */
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo5.png" alt="" >
+            <div>Sonali Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navBar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h3>Join the best gym of Delhi now</h3>
+        <form id="form" action="noaction.php">
+            <label for="name">Name: </label>
+                <input type="text" id="name" name="" placeholder="Enter your name">
+            
+                <label for="phone">Phone Number: </label>
+                <input type="number" name="" id="phone" placeholder="Enter your phone number">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="" placeholder="Enter your Email Id">
+                <label for="age">Age: </label>
+                <input type="number" name="" id="age" placeholder="Enter your age">
+                
+                <label for="local">Locality:</label>
+                <input type="text" name="" id="local" placeholder="Enter your lacality">
+                <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
